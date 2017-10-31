@@ -9,9 +9,9 @@ class Pm extends Groves{
     }
     
     //async sleep board
-    //@parama seconds number, seconds board will sleep for no more than 5 hours, 5~8us/tick 
-    //@parama callback function:
-    //    @parama error Object, error if error, null if none
+    //@arg seconds number, seconds board will sleep for no more than 5 hours, 5~8us/tick 
+    //@arg callback function:
+    //    @arg error Object, error if error, null if none
     sleep(seconds, callback){
         if(typeof(seconds) === "number"){
             if(seconds <= 18000){
@@ -33,7 +33,7 @@ class Pm extends Groves{
     }
     
     //sleep board
-    //@parama seconds number, seconds board will sleep for no more than 5 hours 5~8us/tick 
+    //@arg seconds number, seconds board will sleep for no more than 5 hours 5~8us/tick 
     sleepSync(seconds){
         if(typeof(seconds) === "number"){
             if(seconds <= 18000){
