@@ -20,7 +20,7 @@ class GroveElecMagnetD0 extends Groves{
                 if(error){
                     return callback(error);
                 }
-                if(response.statusCode === 400){
+                if(response.statusCode >= 400){
                     const errorMessage = JSON.parse(body)['error'];
                     return callback(new Error(errorMessage));
                 }
@@ -48,7 +48,7 @@ class GroveElecMagnetD0 extends Groves{
             if(error){
                 throw error;
             }
-            if(response.statusCode === 400){
+            if(response.statusCode >= 400){
                 const errorMessage = JSON.parse(body)['error'];
                 throw new Error(errorMessage);
             }
@@ -85,7 +85,7 @@ class GroveElecMagnetD0 extends Groves{
                 if(error){
                     return callback(error);
                 }
-                if(response.statusCode === 400){
+                if(response.statusCode >= 400){
                     const errorMessage = JSON.parse(body)['error'];
                     return callback(new Error(errorMessage));
                 }
@@ -115,7 +115,7 @@ class GroveElecMagnetD0 extends Groves{
                 if(error){
                     throw error;
                 }
-                if(response.statusCode === 400){
+                if(response.statusCode >= 400){
                     const errorMessage = JSON.parse(body)['error'];
                     throw new Error(errorMessage);
                 }
