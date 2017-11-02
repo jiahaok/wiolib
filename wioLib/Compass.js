@@ -1,9 +1,9 @@
 'use strict';
 
-const request = require('request');
-const Groves = require('./Groves.js');
+import request from 'request';
+import Groves from './Groves.js';
 
-class DigitalCompass3Axis extends Groves{
+export default class extends Groves{
     
     constructor(nodekey){
         super(nodekey);
@@ -32,5 +32,3 @@ class DigitalCompass3Axis extends Groves{
     }
     
 }
-
-module.exports = DigitalCompass3Axis;

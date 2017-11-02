@@ -1,6 +1,6 @@
 'use strict';
 
-class Groves{
+export default class{
     
     constructor(nodekey){
         if(typeof(nodekey) === "string"){
@@ -15,4 +15,3 @@ class Groves{
         return this.nodekey;
     }
 }
- module.exports = Groves;

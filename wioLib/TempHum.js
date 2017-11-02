@@ -1,10 +1,10 @@
 'use strict';
 
-const request = require('request');
-const Groves = require('./Groves.js');
+import request from 'request';
+import Groves from './Groves.js';
 
 // Grove - Electromagnet
-class TempHum extends Groves{
+export default class extends Groves{
     
     constructor(nodekey){
         super(nodekey);
@@ -68,5 +68,3 @@ class TempHum extends Groves{
         }
     }
 }
-
-module.exports = TempHum;
