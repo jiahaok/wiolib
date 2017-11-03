@@ -5,9 +5,9 @@ const config = require("./apiKey.json");
 
 let test = new lib(config.nodekey);
 
-test.getBits((error, status)=>{
+test.level(1,(error, status)=>{
     if(error){
-        console.log(error);
+        console.log("Error: "+error);
     }
     console.log("Result: "+status);
 });
