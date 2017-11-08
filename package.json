@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/jiahaok/wiolib#readme",
   "dependencies": {
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "ws": "^3.3.0"
   }
 }
